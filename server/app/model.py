@@ -43,6 +43,15 @@ def interpret(result):
     return complete([{"role":"system","content":context(result)},
                      {"role":"user","content":"请用中文简短解释牌阵，结合问题给出两三个反思角度。"}])
 
-def chat(result,history,message):
-    return complete([{"role":"system","content":context(result)}]+history[-12:]+[
-        {"role":"user","content":message}])
+def chat(result, history, message):
+    prompt = context(result) + (
+        "\n这是聊天追问。直接接用户刚才说的话，默认用中文回一小段，2–4 句。"
+        "用户只问一张牌，就只聊那张牌。用户要一个小行动，就只给一个。"
+        "牌意点到为止，不替用户做决定，也不例行重复免责声明。"
+        "用纯文本，不加标题、编号或加粗。话说完就停，不固定用问句收尾。"
+    )
+    return complete(
+        [{"role": "system", "content": prompt}]
+        + history[-12:]
+        + [{"role": "user", "content": message}]
+    )
