@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+data/
+web/node_modules/
+web/dist/
+.coverage
+
+.dev-deps/
+web/.npm-cache/
+web/.seed-cache.cjs
+web/.package-lock.local.json
