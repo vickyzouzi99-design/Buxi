@@ -1,0 +1,5 @@
+# Separate optional environment; not needed to run Buxi.
+torch>=2.2,<3
+transformers>=4.46,<5
+peft>=0.14,<1
+accelerate>=1,<2

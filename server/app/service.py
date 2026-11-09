@@ -36,11 +36,11 @@ class Store:
                 yield db
         finally:
             db.close()
-    def create(self, question, spread, request_key, owner="local"):
+    def create(self, question, spread, request_key, owner="local", allow_reversed=True, system="tarot", save=True):
         question=question.strip()
         if len(question)>1000 or not 8 <= len(request_key) <= 100:
             raise ValueError("问题过长或请求标识无效")
-        payload=json.dumps({"question":question,"spread":spread},ensure_ascii=False,sort_keys=True)
+        payload=json.dumps({"question":question,"spread":spread,"allow_reversed":allow_reversed,"system":system},ensure_ascii=False,sort_keys=True)
         with self.connect() as db:
             db.execute("BEGIN IMMEDIATE")
             old=db.execute("SELECT payload,content FROM results WHERE owner_id=? AND request_key=?",
@@ -49,10 +49,16 @@ class Store:
                 if old["payload"] != payload:
                     raise Conflict("同一请求标识不能用于不同的问题")
                 return json.loads(old["content"])
-            cards=draw(spread)
-            result={"id":str(uuid.uuid4()),"system":"tarot","question":question,"spread":spread,
+            if system=='tarot': cards=draw(spread,allow_reversed=allow_reversed)
+            elif system=='sticks':
+                from .rules import STICKS
+                import secrets
+                index=secrets.randbelow(len(STICKS)); title,prompt=STICKS[index]
+                cards=[dict(id=f'stick-{index+1}',name=title,kind='卜犀原创签',position=f'第 {index+1} 签',reversed=False,prompt=prompt)]
+            else: raise ValueError('不支持的工具')
+            result={"id":str(uuid.uuid4()),"system":system,"saved":save,"question":question,"spread":spread,
                     "cards":cards,"created_at":datetime.now(timezone.utc).isoformat(),
-                    "algorithm_version":"tarot-78-v1","interpretation":reflection(cards),
+                    "algorithm_version":"draw-remove-v2","allow_reversed":allow_reversed,"interpretation":reflection(cards) if system=="tarot" else cards[0]["prompt"],
                     "interpretation_source":"local_reflection","model":None}
             db.execute("INSERT INTO results VALUES (?,?,?,?,?,?)",
                        (result["id"],owner,request_key,payload,json.dumps(result,ensure_ascii=False),result["created_at"]))

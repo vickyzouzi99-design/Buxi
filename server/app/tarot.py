@@ -18,26 +18,38 @@ SUITS = [("wands","权杖","行动与热情"),("cups","圣杯","感受与关系"
          ("swords","宝剑","思考与沟通"),("pentacles","星币","资源与日常")]
 RANKS = ["一","二","三","四","五","六","七","八","九","十","侍从","骑士","王后","国王"]
 
+DATA = __import__('json').loads((__import__('pathlib').Path(__file__).parent/'data/tarotoo.json').read_text())
+SOURCES = __import__('json').loads((__import__('pathlib').Path(__file__).parent/'data/sources.json').read_text())
+from .rules import SPREADS
+
 def deck():
-    cards = [{"id":f"major-{i}","name":name,"kind":"大阿尔卡那","prompt":prompt}
-             for i,(name,prompt) in enumerate(MAJORS)]
-    for code,name,theme in SUITS:
-        for i,rank in enumerate(RANKS):
-            cards.append({"id":f"{code}-{i+1}","name":name+rank,"kind":name,
-                          "prompt":f"从{theme}的角度，想想你此刻最需要关注的事"})
+    names = [x[0] for x in MAJORS]
+    cards=[]
+    for source in DATA:
+        rank=source['number_numerology']
+        suit=source['suit']
+        kind=next((x[1] for x in SUITS if x[0]==suit),'大阿尔卡那')
+        cid=f"{suit}-{rank}" if suit else f"major-{source['id']}"
+        cards.append(dict(id=cid,name=names[source['id']] if not suit else kind+RANKS[rank-1],
+            kind=kind,arcana=source['arcana'],suit=suit,rank=rank,prompt=source['meaning_upright'],
+            meanings={'upright':source['meaning_upright'],'reversed':source['meaning_reversed']},
+            keywords={'upright':source['keywords_upright'],'reversed':source['keywords_reversed']},
+            source={'name':'Tarotoo','url':'https://github.com/Tarotoo-com/tarotoo-tarot-dataset',
+                    'revision':SOURCES['tarotoo'],'id':source['id']},
+            contexts={k:source[k] for k in ['love','love_reversed','career','career_reversed']}))
     return cards
 
-def draw(spread, rng=None):
-    rng = rng or secrets.SystemRandom()
-    positions = {"single":["此刻的提醒"], "three":["当下","值得留意","可以尝试"]}
-    if spread not in positions:
-        raise ValueError("不支持的牌阵")
-    return [dict(card, position=position, reversed=bool(rng.getrandbits(1)))
-            for card,position in zip(rng.sample(deck(),len(positions[spread])),positions[spread])]
+def draw(spread,rng=None,allow_reversed=True):
+    rng=rng or secrets.SystemRandom()
+    if spread not in SPREADS: raise ValueError('不支持的牌阵')
+    remaining=deck()
+    hand=[]
+    # Independently implemented: random index -> remove card; same method as python-tarot.
+    for position in SPREADS[spread]:
+        card=remaining.pop(rng.randrange(len(remaining)))
+        rev=rng.choice([True,False]) if allow_reversed else False
+        hand.append(dict(card,position=position,reversed=rev,prompt=card['meanings']['reversed' if rev else 'upright']))
+    return hand
 
 def reflection(cards):
-    return "\n\n".join(
-        f"{c['position']} · {c['name']}（{'逆位' if c['reversed'] else '正位'}）\n"
-        + c["prompt"] + ("。逆位可作为反思阻碍或内在感受的角度，并不意味着坏事。" if c["reversed"]
-                         else "。这是一个思考角度，不是对未来的断言。")
-        for c in cards)
+    return '\n\n'.join(f"{c['position']} · {c['name']}（{'逆位' if c['reversed'] else '正位'}）\n资料原文：{c['prompt']}" for c in cards)
