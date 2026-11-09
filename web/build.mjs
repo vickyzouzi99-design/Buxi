@@ -1,5 +1,5 @@
 import {build} from 'esbuild';
-import {mkdir,copyFile,readFile,stat} from 'node:fs/promises';
+import {mkdir,copyFile,readFile,stat,cp} from 'node:fs/promises';
 import path from 'node:path';
 const root=process.cwd();
 // Explicit project-local resolution avoids scanning protected parent folders.
@@ -8,6 +8,7 @@ const localResolver={
  name:'project-local',
  setup(build){
   build.onResolve({filter:/.*/},async args=>{
+   if(args.path.startsWith('/assets/')) return {path:args.path,external:true};
    let file;
    if(args.path.startsWith('.')||path.isAbsolute(args.path)){
     file=path.resolve(args.resolveDir||root,args.path);
@@ -18,14 +19,14 @@ const localResolver={
     if(parts.length) file=path.join(dir,...parts);
     else {const pkg=JSON.parse(await readFile(path.join(dir,'package.json'),'utf8'));file=path.join(dir,pkg.main||'index.js');}
    }
-   for(const candidate of [file,file+'.js',file+'.tsx',path.join(file,'index.js')]){
+   for(const candidate of [file,file+'.js',file+'.tsx',file+'.ts',path.join(file,'index.js')]){
     try{if((await stat(candidate)).isFile())return {path:candidate,namespace:'local'};}catch{}
    }
    return {errors:[{text:'Cannot resolve '+args.path}]};
   });
   build.onLoad({filter:/.*/,namespace:'local'},async args=>({
    contents:await readFile(args.path,'utf8'),
-   loader:args.path.endsWith('.css')?'css':args.path.endsWith('.tsx')?'tsx':'js',
+   loader:args.path.endsWith('.css')?'css':args.path.endsWith('.tsx')?'tsx':args.path.endsWith('.ts')?'ts':'js',
    resolveDir:path.dirname(args.path)
   }));
  }
@@ -35,3 +36,5 @@ await build({entryPoints:{main:'./src/main.tsx'},bundle:true,outdir:'dist',minif
 await copyFile('index.html','dist/index.html');
 console.log('Buxi web built: dist/');
 
+
+await cp('public','dist',{recursive:true});

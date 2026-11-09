@@ -76,3 +76,19 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Tarotoo Tarot Dataset
+
+Source: https://github.com/Tarotoo-com/tarotoo-tarot-dataset
+Revision: 83202267973950eb5bf034f144b9405db9cb1e7e
+Copyright (c) 2026 Tarotoo (tarotoo.com).
+Full MIT notice: licenses/Tarotoo-MIT.txt.
+Bundled data: server/app/data/tarotoo.json and derived training/data/*.jsonl.
+
+## References, no source code bundled
+
+jeremytarling/python-tarot: random-index/remove method and fair orientation choice.
+infomofo/ts-tarot-cards: card/suit/spread type organization.
+Both implementations in this package are independently authored.
+
+sqlite-vec is installed through PyPI; no compiled library is bundled in the ZIP.

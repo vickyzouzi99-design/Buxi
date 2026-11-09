@@ -2,7 +2,7 @@
 .venv/
 __pycache__/
 *.pyc
-data/
+/data/
 web/node_modules/
 web/dist/
 .coverage
