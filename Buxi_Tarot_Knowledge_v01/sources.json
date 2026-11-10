@@ -1,0 +1,89 @@
+[
+  {
+    "id": "waite_pg43548_1918",
+    "title": "The illustrated key to the Tarot: the veil of divination",
+    "original_work": "The Pictorial Key to the Tarot",
+    "author_attribution": "Arthur Edward Waite",
+    "transcription_title_page_byline": "L. W. de Laurence",
+    "title_page_copyright_year": 1918,
+    "edition_note": "使用 Project Gutenberg #43548 的1918年印本转录。它并非直接核验的1910/1911年 Waite 初版。Gutenberg 作者字段列 Waite、Dubious author 列 De Laurence；转录本存在 God (Nature) 等措辞，不将各版文字假定为完全一致。",
+    "url": "https://www.gutenberg.org/ebooks/43548",
+    "download_url": "https://www.gutenberg.org/cache/epub/43548/pg43548.txt",
+    "accessed_on": "2026-11-10",
+    "ebook_last_updated": "2024-10-23",
+    "raw_sha256": "59de3a882905c1b7a989f1a508711c25dfed1bcfbf60fec318c1c059d2342d9c",
+    "rights_statement": "源站标注 Public domain in the USA；分发的原始电子书保留完整 Gutenberg 声明与许可。其他地区及衍生版本应按适用条件核查。",
+    "raw_file": "sources/waite_pg43548.txt",
+    "included_content": "原始转录全文作为核查快照；知识条目只处理已读章节。",
+    "read_scope": [
+      "Part II Section 2: 22张大牌象征",
+      "Part III Section 2: 56张小牌主要牌义",
+      "Part III Section 3: 22张大牌占卜词表",
+      "Part III Section 4: 圣杯二补充逆位条目",
+      "Part III Sections 6–7: 牌阵方法节选"
+    ],
+    "not_claimed": "未声明通读全文的历史论证、全部补充牌义或其他牌阵；未完成逐行异版校勘。",
+    "status": "downloaded_and_relevant_sections_read"
+  },
+  {
+    "id": "waite_sacred_crosscheck",
+    "title": "The Pictorial Key to the Tarot",
+    "author": "Arthur Edward Waite",
+    "url": "https://sacred-texts.com/book/the-pictorial-key-to-the-tarot",
+    "accessed_on": "2026-11-10",
+    "read_scope": [
+      "目录",
+      "Part III Section 3 大阿尔卡那词表网页",
+      "权杖四、圣杯二对应网页核查"
+    ],
+    "status": "web_crosscheck_only_not_complete_edition_collation",
+    "note": "作为异版核查入口；数据的逐条英文证据均引用实际保存的 Gutenberg 转录，不将抽查写成全文校对。"
+  },
+  {
+    "id": "pollack_78_wisdom_bibliography",
+    "title": "Seventy Eight Degrees of Wisdom",
+    "author": "Rachel Pollack",
+    "publisher": "Thorsons / HarperCollins",
+    "edition_date": "1997-11-17",
+    "isbn": "9780722535721",
+    "url": "https://www.harperreach.com/products/seventy-eight-degrees-of-wisdom-a-book-of-tarot-rachel-pollack-9780722535721/",
+    "accessed_on": "2026-11-10",
+    "status": "publisher_description_read_book_not_read",
+    "used_for_card_meanings": false,
+    "included_content": "书目元数据；未纳入该书逐张牌义或训练语料。",
+    "next_action": "获得可合法研究的具体章节后再逐条补充，入库、公开再分发和训练权限分别判断。"
+  },
+  {
+    "id": "greer_reversals_bibliography",
+    "title": "The Complete Book of Tarot Reversals",
+    "author": "Mary K. Greer",
+    "publisher": "Llewellyn",
+    "edition_date": "2002-03",
+    "isbn": "9781567182859",
+    "url": "https://www.llewellyn.com/product.php?ean=9781567182859",
+    "accessed_on": "2026-11-10",
+    "status": "publisher_search_record_checked_book_not_read",
+    "used_for_card_meanings": false,
+    "included_content": "书目元数据；未纳入书内十二种方法或逐牌内容。"
+  },
+  {
+    "id": "greer_public_article",
+    "title": "Tarot Reversals",
+    "author": "Mary K. Greer",
+    "published_on": "2002-03-01",
+    "url": "https://www.llewellyn.com/journal/print.php?id=337",
+    "accessed_on": "2026-11-10",
+    "status": "search_cached_article_read_live_fetch_403",
+    "used_for_card_meanings": false,
+    "included_content": "仅在方法说明中概述“逆位不必等于负面”的公开观点；未复制文章或作为书本全文替代。"
+  },
+  {
+    "id": "buxi_editorial_v01",
+    "title": "卜犀反思式改写与集成规则",
+    "author": "AI-assisted project editorial draft",
+    "version": "0.1.0-2026-11-10",
+    "created_on": "2026-11-10",
+    "status": "human_review_pending",
+    "note": "本包关键词、问题、反思建议和产品规则属于本次生成的项目内容，不冒充 Waite、Pollack 或 Greer 原文。"
+  }
+]

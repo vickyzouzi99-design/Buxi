@@ -1,0 +1,4066 @@
+{
+  "knowledge_version": "0.1.0-2026-11-10",
+  "checked_on": "2026-11-10",
+  "card_count": 78,
+  "chunk_count": 156,
+  "structural_checks": 1013,
+  "passed": true,
+  "human_semantic_review": "not_done",
+  "application_integration": "not_done",
+  "live_model_evaluation": "not_run",
+  "meaning_of_pass": "数量、字段、引用定位和字节一致性通过；不是专业内容或预测有效性认证。",
+  "checks": [
+    {
+      "check": "78 distinct expected RWS IDs",
+      "passed": true
+    },
+    {
+      "check": "source bytes SHA256",
+      "passed": true
+    },
+    {
+      "check": "RWS VIII=Strength XI=Justice",
+      "passed": true
+    },
+    {
+      "check": "major-0 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-0 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-0 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-0 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-0 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-0 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-0 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-0 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-0 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-0 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-0 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-1 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-1 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-1 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-1 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-1 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-1 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-1 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-1 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-1 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-1 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-1 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-2 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-2 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-2 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-2 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-2 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-2 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-2 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-2 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-2 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-2 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-2 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-3 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-3 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-3 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-3 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-3 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-3 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-3 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-3 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-3 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-3 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-3 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-4 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-4 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-4 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-4 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-4 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-4 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-4 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-4 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-4 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-4 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-4 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-5 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-5 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-5 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-5 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-5 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-5 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-5 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-5 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-5 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-5 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-5 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-6 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-6 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-6 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-6 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-6 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-6 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-6 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-6 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-6 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-6 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-6 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-7 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-7 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-7 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-7 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-7 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-7 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-7 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-7 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-7 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-7 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-7 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-8 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-8 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-8 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-8 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-8 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-8 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-8 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-8 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-8 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-8 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-8 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-9 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-9 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-9 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-9 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-9 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-9 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-9 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-9 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-9 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-9 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-9 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-10 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-10 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-10 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-10 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-10 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-10 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-10 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-10 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-10 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-10 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-10 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-11 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-11 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-11 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-11 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-11 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-11 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-11 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-11 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-11 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-11 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-11 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-12 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-12 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-12 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-12 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-12 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-12 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-12 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-12 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-12 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-12 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-12 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-13 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-13 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-13 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-13 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-13 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-13 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-13 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-13 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-13 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-13 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-13 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-14 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-14 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-14 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-14 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-14 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-14 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-14 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-14 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-14 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-14 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-14 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-15 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-15 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-15 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-15 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-15 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-15 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-15 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-15 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-15 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-15 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-15 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-16 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-16 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-16 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-16 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-16 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-16 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-16 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-16 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-16 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-16 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-16 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-17 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-17 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-17 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-17 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-17 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-17 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-17 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-17 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-17 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-17 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-17 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-18 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-18 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-18 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-18 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-18 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-18 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-18 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-18 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-18 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-18 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-18 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-19 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-19 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-19 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-19 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-19 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-19 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-19 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-19 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-19 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-19 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-19 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-20 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-20 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-20 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-20 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-20 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-20 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-20 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-20 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-20 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-20 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-20 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-21 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "major-21 upright fields",
+      "passed": true
+    },
+    {
+      "check": "major-21 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-21 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "major-21 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "major-21 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "major-21 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-21 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "major-21 symbolism source exists",
+      "passed": true
+    },
+    {
+      "check": "major-21 symbolism exact source span",
+      "passed": true
+    },
+    {
+      "check": "major-21 symbolism excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "wands-1 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "wands-1 upright fields",
+      "passed": true
+    },
+    {
+      "check": "wands-1 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-1 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "wands-1 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-1 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "wands-1 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "wands-1 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "wands-2 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "wands-2 upright fields",
+      "passed": true
+    },
+    {
+      "check": "wands-2 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-2 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "wands-2 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-2 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "wands-2 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "wands-2 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "wands-3 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "wands-3 upright fields",
+      "passed": true
+    },
+    {
+      "check": "wands-3 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-3 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "wands-3 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-3 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "wands-3 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "wands-3 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "wands-4 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "wands-4 upright fields",
+      "passed": true
+    },
+    {
+      "check": "wands-4 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-4 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "wands-4 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-4 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "wands-4 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "wands-4 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "wands-5 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "wands-5 upright fields",
+      "passed": true
+    },
+    {
+      "check": "wands-5 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-5 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "wands-5 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-5 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "wands-5 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "wands-5 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "wands-6 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "wands-6 upright fields",
+      "passed": true
+    },
+    {
+      "check": "wands-6 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-6 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "wands-6 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-6 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "wands-6 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "wands-6 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "wands-7 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "wands-7 upright fields",
+      "passed": true
+    },
+    {
+      "check": "wands-7 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-7 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "wands-7 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-7 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "wands-7 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "wands-7 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "wands-8 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "wands-8 upright fields",
+      "passed": true
+    },
+    {
+      "check": "wands-8 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-8 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "wands-8 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-8 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "wands-8 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "wands-8 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "wands-9 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "wands-9 upright fields",
+      "passed": true
+    },
+    {
+      "check": "wands-9 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-9 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "wands-9 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-9 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "wands-9 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "wands-9 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "wands-10 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "wands-10 upright fields",
+      "passed": true
+    },
+    {
+      "check": "wands-10 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-10 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "wands-10 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-10 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "wands-10 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "wands-10 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "wands-11 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "wands-11 upright fields",
+      "passed": true
+    },
+    {
+      "check": "wands-11 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-11 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "wands-11 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-11 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "wands-11 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "wands-11 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "wands-12 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "wands-12 upright fields",
+      "passed": true
+    },
+    {
+      "check": "wands-12 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-12 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "wands-12 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-12 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "wands-12 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "wands-12 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "wands-13 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "wands-13 upright fields",
+      "passed": true
+    },
+    {
+      "check": "wands-13 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-13 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "wands-13 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-13 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "wands-13 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "wands-13 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "wands-14 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "wands-14 upright fields",
+      "passed": true
+    },
+    {
+      "check": "wands-14 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-14 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "wands-14 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "wands-14 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "wands-14 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "wands-14 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "cups-1 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "cups-1 upright fields",
+      "passed": true
+    },
+    {
+      "check": "cups-1 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-1 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "cups-1 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-1 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "cups-1 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "cups-1 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "cups-2 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "cups-2 upright fields",
+      "passed": true
+    },
+    {
+      "check": "cups-2 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-2 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "cups-2 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-2 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "cups-2 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "cups-2 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "cups-2 reversal_supplement source exists",
+      "passed": true
+    },
+    {
+      "check": "cups-2 reversal_supplement exact source span",
+      "passed": true
+    },
+    {
+      "check": "cups-2 reversal_supplement excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "cups-3 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "cups-3 upright fields",
+      "passed": true
+    },
+    {
+      "check": "cups-3 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-3 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "cups-3 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-3 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "cups-3 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "cups-3 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "cups-4 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "cups-4 upright fields",
+      "passed": true
+    },
+    {
+      "check": "cups-4 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-4 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "cups-4 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-4 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "cups-4 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "cups-4 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "cups-5 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "cups-5 upright fields",
+      "passed": true
+    },
+    {
+      "check": "cups-5 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-5 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "cups-5 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-5 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "cups-5 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "cups-5 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "cups-6 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "cups-6 upright fields",
+      "passed": true
+    },
+    {
+      "check": "cups-6 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-6 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "cups-6 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-6 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "cups-6 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "cups-6 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "cups-7 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "cups-7 upright fields",
+      "passed": true
+    },
+    {
+      "check": "cups-7 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-7 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "cups-7 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-7 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "cups-7 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "cups-7 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "cups-8 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "cups-8 upright fields",
+      "passed": true
+    },
+    {
+      "check": "cups-8 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-8 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "cups-8 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-8 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "cups-8 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "cups-8 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "cups-9 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "cups-9 upright fields",
+      "passed": true
+    },
+    {
+      "check": "cups-9 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-9 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "cups-9 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-9 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "cups-9 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "cups-9 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "cups-10 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "cups-10 upright fields",
+      "passed": true
+    },
+    {
+      "check": "cups-10 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-10 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "cups-10 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-10 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "cups-10 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "cups-10 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "cups-11 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "cups-11 upright fields",
+      "passed": true
+    },
+    {
+      "check": "cups-11 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-11 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "cups-11 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-11 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "cups-11 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "cups-11 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "cups-12 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "cups-12 upright fields",
+      "passed": true
+    },
+    {
+      "check": "cups-12 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-12 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "cups-12 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-12 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "cups-12 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "cups-12 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "cups-13 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "cups-13 upright fields",
+      "passed": true
+    },
+    {
+      "check": "cups-13 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-13 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "cups-13 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-13 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "cups-13 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "cups-13 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "cups-14 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "cups-14 upright fields",
+      "passed": true
+    },
+    {
+      "check": "cups-14 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-14 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "cups-14 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "cups-14 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "cups-14 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "cups-14 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "swords-1 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "swords-1 upright fields",
+      "passed": true
+    },
+    {
+      "check": "swords-1 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-1 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "swords-1 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-1 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "swords-1 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "swords-1 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "swords-2 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "swords-2 upright fields",
+      "passed": true
+    },
+    {
+      "check": "swords-2 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-2 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "swords-2 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-2 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "swords-2 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "swords-2 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "swords-3 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "swords-3 upright fields",
+      "passed": true
+    },
+    {
+      "check": "swords-3 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-3 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "swords-3 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-3 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "swords-3 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "swords-3 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "swords-4 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "swords-4 upright fields",
+      "passed": true
+    },
+    {
+      "check": "swords-4 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-4 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "swords-4 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-4 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "swords-4 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "swords-4 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "swords-5 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "swords-5 upright fields",
+      "passed": true
+    },
+    {
+      "check": "swords-5 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-5 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "swords-5 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-5 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "swords-5 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "swords-5 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "swords-6 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "swords-6 upright fields",
+      "passed": true
+    },
+    {
+      "check": "swords-6 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-6 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "swords-6 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-6 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "swords-6 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "swords-6 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "swords-7 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "swords-7 upright fields",
+      "passed": true
+    },
+    {
+      "check": "swords-7 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-7 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "swords-7 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-7 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "swords-7 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "swords-7 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "swords-8 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "swords-8 upright fields",
+      "passed": true
+    },
+    {
+      "check": "swords-8 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-8 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "swords-8 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-8 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "swords-8 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "swords-8 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "swords-9 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "swords-9 upright fields",
+      "passed": true
+    },
+    {
+      "check": "swords-9 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-9 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "swords-9 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-9 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "swords-9 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "swords-9 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "swords-10 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "swords-10 upright fields",
+      "passed": true
+    },
+    {
+      "check": "swords-10 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-10 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "swords-10 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-10 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "swords-10 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "swords-10 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "swords-11 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "swords-11 upright fields",
+      "passed": true
+    },
+    {
+      "check": "swords-11 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-11 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "swords-11 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-11 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "swords-11 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "swords-11 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "swords-12 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "swords-12 upright fields",
+      "passed": true
+    },
+    {
+      "check": "swords-12 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-12 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "swords-12 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-12 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "swords-12 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "swords-12 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "swords-13 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "swords-13 upright fields",
+      "passed": true
+    },
+    {
+      "check": "swords-13 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-13 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "swords-13 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-13 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "swords-13 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "swords-13 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "swords-14 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "swords-14 upright fields",
+      "passed": true
+    },
+    {
+      "check": "swords-14 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-14 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "swords-14 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "swords-14 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "swords-14 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "swords-14 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "pentacles-1 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "pentacles-1 upright fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-1 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-1 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-1 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-1 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-1 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "pentacles-1 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "pentacles-2 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "pentacles-2 upright fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-2 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-2 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-2 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-2 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-2 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "pentacles-2 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "pentacles-3 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "pentacles-3 upright fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-3 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-3 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-3 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-3 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-3 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "pentacles-3 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "pentacles-4 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "pentacles-4 upright fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-4 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-4 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-4 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-4 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-4 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "pentacles-4 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "pentacles-5 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "pentacles-5 upright fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-5 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-5 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-5 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-5 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-5 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "pentacles-5 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "pentacles-6 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "pentacles-6 upright fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-6 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-6 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-6 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-6 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-6 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "pentacles-6 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "pentacles-7 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "pentacles-7 upright fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-7 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-7 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-7 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-7 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-7 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "pentacles-7 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "pentacles-8 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "pentacles-8 upright fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-8 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-8 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-8 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-8 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-8 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "pentacles-8 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "pentacles-9 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "pentacles-9 upright fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-9 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-9 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-9 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-9 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-9 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "pentacles-9 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "pentacles-10 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "pentacles-10 upright fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-10 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-10 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-10 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-10 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-10 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "pentacles-10 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "pentacles-11 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "pentacles-11 upright fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-11 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-11 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-11 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-11 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-11 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "pentacles-11 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "pentacles-12 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "pentacles-12 upright fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-12 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-12 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-12 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-12 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-12 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "pentacles-12 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "pentacles-13 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "pentacles-13 upright fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-13 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-13 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-13 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-13 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-13 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "pentacles-13 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "pentacles-14 human-review status honest",
+      "passed": true
+    },
+    {
+      "check": "pentacles-14 upright fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-14 upright evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-14 reversed fields",
+      "passed": true
+    },
+    {
+      "check": "pentacles-14 reversed evidence exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-14 meaning source exists",
+      "passed": true
+    },
+    {
+      "check": "pentacles-14 meaning exact source span",
+      "passed": true
+    },
+    {
+      "check": "pentacles-14 meaning excerpt hash",
+      "passed": true
+    },
+    {
+      "check": "156 unique orientation chunks",
+      "passed": true
+    },
+    {
+      "check": "exactly two orientations per card",
+      "passed": true
+    },
+    {
+      "check": "major-0:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-0:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-0:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-0:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-1:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-1:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-1:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-1:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-2:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-2:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-2:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-2:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-3:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-3:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-3:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-3:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-4:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-4:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-4:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-4:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-5:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-5:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-5:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-5:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-6:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-6:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-6:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-6:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-7:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-7:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-7:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-7:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-8:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-8:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-8:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-8:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-9:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-9:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-9:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-9:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-10:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-10:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-10:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-10:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-11:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-11:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-11:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-11:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-12:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-12:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-12:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-12:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-13:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-13:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-13:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-13:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-14:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-14:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-14:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-14:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-15:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-15:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-15:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-15:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-16:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-16:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-16:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-16:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-17:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-17:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-17:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-17:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-18:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-18:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-18:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-18:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-19:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-19:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-19:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-19:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-20:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-20:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-20:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-20:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-21:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-21:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "major-21:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "major-21:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-1:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-1:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-1:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-1:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-2:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-2:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-2:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-2:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-3:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-3:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-3:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-3:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-4:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-4:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-4:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-4:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-5:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-5:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-5:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-5:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-6:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-6:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-6:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-6:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-7:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-7:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-7:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-7:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-8:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-8:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-8:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-8:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-9:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-9:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-9:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-9:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-10:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-10:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-10:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-10:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-11:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-11:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-11:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-11:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-12:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-12:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-12:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-12:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-13:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-13:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-13:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-13:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-14:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-14:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "wands-14:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "wands-14:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-1:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-1:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-1:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-1:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-2:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-2:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-2:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-2:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-3:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-3:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-3:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-3:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-4:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-4:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-4:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-4:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-5:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-5:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-5:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-5:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-6:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-6:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-6:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-6:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-7:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-7:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-7:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-7:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-8:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-8:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-8:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-8:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-9:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-9:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-9:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-9:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-10:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-10:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-10:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-10:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-11:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-11:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-11:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-11:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-12:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-12:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-12:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-12:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-13:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-13:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-13:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-13:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-14:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-14:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "cups-14:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "cups-14:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-1:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-1:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-1:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-1:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-2:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-2:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-2:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-2:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-3:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-3:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-3:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-3:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-4:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-4:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-4:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-4:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-5:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-5:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-5:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-5:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-6:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-6:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-6:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-6:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-7:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-7:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-7:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-7:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-8:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-8:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-8:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-8:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-9:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-9:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-9:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-9:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-10:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-10:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-10:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-10:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-11:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-11:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-11:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-11:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-12:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-12:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-12:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-12:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-13:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-13:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-13:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-13:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-14:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-14:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "swords-14:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "swords-14:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-1:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-1:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-1:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-1:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-2:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-2:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-2:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-2:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-3:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-3:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-3:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-3:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-4:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-4:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-4:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-4:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-5:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-5:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-5:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-5:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-6:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-6:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-6:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-6:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-7:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-7:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-7:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-7:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-8:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-8:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-8:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-8:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-9:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-9:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-9:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-9:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-10:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-10:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-10:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-10:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-11:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-11:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-11:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-11:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-12:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-12:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-12:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-12:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-13:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-13:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-13:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-13:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-14:upright:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-14:upright:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "pentacles-14:reversed:0.1.0-2026-11-10 citation points to matching card",
+      "passed": true
+    },
+    {
+      "check": "pentacles-14:reversed:0.1.0-2026-11-10 adaptation labeled",
+      "passed": true
+    },
+    {
+      "check": "Cups Two reversal is supplement not invented main entry",
+      "passed": true
+    },
+    {
+      "check": "modern book bodies excluded",
+      "passed": true
+    },
+    {
+      "check": "20 eval specifications explicitly not run",
+      "passed": true
+    }
+  ]
+}
