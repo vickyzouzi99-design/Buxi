@@ -1,0 +1,137 @@
+[
+  {
+    "id": "python-tarot",
+    "author": "jeremytarling",
+    "title": "python-tarot",
+    "revision": "aa9a9bb2dc700c019aa04b85e65e80b764c13a55",
+    "accessed_on": "2026-11-11",
+    "url": "https://github.com/jeremytarling/python-tarot",
+    "files": [
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/jeremytarling/python-tarot/aa9a9bb2dc700c019aa04b85e65e80b764c13a55/README.md",
+        "sha256": "754aac89dc73af1d17771defa8edba56c3bd4b367681092143bede311ee20d1a",
+        "bytes": 799
+      },
+      {
+        "path": "tests/test_cards.py",
+        "url": "https://raw.githubusercontent.com/jeremytarling/python-tarot/aa9a9bb2dc700c019aa04b85e65e80b764c13a55/tests/test_cards.py",
+        "sha256": "9ab00aee463cefe63c4f0c0df8bc8a08b6335bd4cacc9c99b2a5f25e9c515244",
+        "bytes": 1226
+      },
+      {
+        "path": "webapp/cards.py",
+        "url": "https://raw.githubusercontent.com/jeremytarling/python-tarot/aa9a9bb2dc700c019aa04b85e65e80b764c13a55/webapp/cards.py",
+        "sha256": "ae0a925cbb3e019468251b2c18ecac27c4fcd72a7f064aae1193b3de07693914",
+        "bytes": 49203
+      }
+    ],
+    "use": "reference_only; no new source or images copied",
+    "license_files": [],
+    "status": "opened_pinned_files",
+    "license": "README permits code reuse; interpretations CC BY-NC-SA; image permission personal to upstream. None newly copied."
+  },
+  {
+    "id": "tarotoo",
+    "author": "Tarotoo-com",
+    "title": "tarotoo-tarot-dataset",
+    "revision": "83202267973950eb5bf034f144b9405db9cb1e7e",
+    "accessed_on": "2026-11-11",
+    "url": "https://github.com/Tarotoo-com/tarotoo-tarot-dataset",
+    "files": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/Tarotoo-com/tarotoo-tarot-dataset/83202267973950eb5bf034f144b9405db9cb1e7e/LICENSE",
+        "sha256": "218f9a3c861336f29f15faaef326f53eb771a3746aa0127567dcd12b04f7cafa",
+        "bytes": 1078
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/Tarotoo-com/tarotoo-tarot-dataset/83202267973950eb5bf034f144b9405db9cb1e7e/README.md",
+        "sha256": "259502ab41322fc76d7e154fce7006800a711f614b8b413b589456070feeeadd",
+        "bytes": 11487
+      },
+      {
+        "path": "data/cards.json",
+        "url": "https://raw.githubusercontent.com/Tarotoo-com/tarotoo-tarot-dataset/83202267973950eb5bf034f144b9405db9cb1e7e/data/cards.json",
+        "sha256": "0298c51ed61374e440612c3454bd5e8e1fb25abe959e59d6442f6cd7a61beb41",
+        "bytes": 111711
+      },
+      {
+        "path": "data/src/cups.json",
+        "url": "https://raw.githubusercontent.com/Tarotoo-com/tarotoo-tarot-dataset/83202267973950eb5bf034f144b9405db9cb1e7e/data/src/cups.json",
+        "sha256": "371f8278d1836d07c81b8b45eabef8a62d63a1c690f625c215129565c9d47a96",
+        "bytes": 20219
+      }
+    ],
+    "use": "reference_only; no new source or images copied",
+    "license_files": [
+      "LICENSE"
+    ],
+    "matches_local_data": true,
+    "status": "opened_pinned_files",
+    "license": "MIT; see pinned LICENSE and licenses/Tarotoo-MIT.txt"
+  },
+  {
+    "id": "ts-tarot-cards",
+    "author": "infomofo",
+    "title": "ts-tarot-cards",
+    "revision": "28e4a552e75c72542b19be5cbbb8b7960d8259b4",
+    "accessed_on": "2026-11-11",
+    "url": "https://github.com/infomofo/ts-tarot-cards",
+    "files": [
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/infomofo/ts-tarot-cards/28e4a552e75c72542b19be5cbbb8b7960d8259b4/README.md",
+        "sha256": "9ec050e68e209046d6597e60ce9389d7f3c9e8e48b5adddb102a26b8dc89f15f",
+        "bytes": 21557
+      },
+      {
+        "path": "src/cards/major-arcana.ts",
+        "url": "https://raw.githubusercontent.com/infomofo/ts-tarot-cards/28e4a552e75c72542b19be5cbbb8b7960d8259b4/src/cards/major-arcana.ts",
+        "sha256": "6aca76555aa352af9100ebfd16af5935cccdea1671150afdc46eb7f0fa745638",
+        "bytes": 2651
+      },
+      {
+        "path": "src/cards/minor-arcana.ts",
+        "url": "https://raw.githubusercontent.com/infomofo/ts-tarot-cards/28e4a552e75c72542b19be5cbbb8b7960d8259b4/src/cards/minor-arcana.ts",
+        "sha256": "d03dc9977d4c70aa219fd4e53a7c6c1dec85c67742f6e5e9296d6449bd79f522",
+        "bytes": 3099
+      },
+      {
+        "path": "src/cards/svg-generator.ts",
+        "url": "https://raw.githubusercontent.com/infomofo/ts-tarot-cards/28e4a552e75c72542b19be5cbbb8b7960d8259b4/src/cards/svg-generator.ts",
+        "sha256": "579fa3586b4fe3915a978d97292e9de06200c36c66a918e4c36281e3dd2bbc25",
+        "bytes": 8556
+      },
+      {
+        "path": "src/cards/utils.ts",
+        "url": "https://raw.githubusercontent.com/infomofo/ts-tarot-cards/28e4a552e75c72542b19be5cbbb8b7960d8259b4/src/cards/utils.ts",
+        "sha256": "682261e9a829825b292520453021be15249df434faeab9562149eae71314a684",
+        "bytes": 1029
+      },
+      {
+        "path": "src/deck/card-selection-strategies.ts",
+        "url": "https://raw.githubusercontent.com/infomofo/ts-tarot-cards/28e4a552e75c72542b19be5cbbb8b7960d8259b4/src/deck/card-selection-strategies.ts",
+        "sha256": "516363d584acdb5c3025accf40a05921c4893790fde84642e3170ecca782b51b",
+        "bytes": 1020
+      },
+      {
+        "path": "src/spreads/renderer.ts",
+        "url": "https://raw.githubusercontent.com/infomofo/ts-tarot-cards/28e4a552e75c72542b19be5cbbb8b7960d8259b4/src/spreads/renderer.ts",
+        "sha256": "689a50d5a829223e2503884a01d2595767972fa8b91878e4fb0600625513175d",
+        "bytes": 4386
+      },
+      {
+        "path": "src/spreads/spreads.ts",
+        "url": "https://raw.githubusercontent.com/infomofo/ts-tarot-cards/28e4a552e75c72542b19be5cbbb8b7960d8259b4/src/spreads/spreads.ts",
+        "sha256": "007c1ed181d4be519d64f7890a96eb1d968fcb52a26bca7911e0f3f0be00c3dc",
+        "bytes": 5773
+      }
+    ],
+    "use": "reference_only; no new source or images copied",
+    "license_files": [],
+    "status": "opened_pinned_files",
+    "license": "README states ISC; no standalone LICENSE in pinned tree; reference structure only"
+  }
+]

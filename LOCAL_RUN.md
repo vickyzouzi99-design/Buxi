@@ -1,4 +1,13 @@
-# 卜犀 0.2 · 本地升级与启动
+# 卜犀 0.3 · 本地升级与启动
+
+先读 **[本轮启动、迁移恢复与验收步骤](docs/run-v03.md)**。现有目录可直接运行：
+
+```powershell
+cd C:\Buxi
+.\.venv\Scripts\python.exe scripts\local_preview.py
+```
+
+先关闭旧版服务，再启动。打开 http://127.0.0.1:8080 ，继续使用原内测码；无需重写`.env`。保留整个资料包目录，前端已在本机重建。以下旧版部署背景继续有效，知识检索与迁移行为以本轮文档为准。
 
 本包包含构建好的网页，不修改前端就不必安装 Node。Python 3.10+。
 
@@ -43,7 +52,7 @@ python scripts\local_preview.py
 
 ## 向量库
 
-使用 sqlite-vec，默认本地字符向量，不收费、不下载模型；它是词面相似检索，不能当成跨语言语义检索。
+个人记忆使用 sqlite-vec，默认本地字符向量，不收费、不下载模型；它是词面相似检索，不能当成跨语言语义检索。0.3公共专业检索使用只读文件中的名称与关键词，无启动时embedding构建。
 要启用语义检索，配置 OpenAI-compatible embeddings 的 `EMBEDDING_BASE_URL`（包含所需 /v1）、`EMBEDDING_API_KEY`、`EMBEDDING_MODEL`。
 这会把待检索文本和明确保存的记忆发送到配置的 embedding 服务。初始化/重建公开资料索引会产生 embedding 请求。
 更换 embedding 服务/模型后先重建，再重启：
@@ -56,7 +65,7 @@ python scripts\admin.py --reindex
 
 ## 修改前端时
 
-你的 Node 16 无法构建该项目；升级为 Node 22 或更高再执行。仅运行本包预构建网页不需要 Node。
+推荐按package.json使用Node 22或更高。本轮Windows的Node 16.14.0在补齐固定依赖后实际通过类型检查和构建，但npm仍有engine不匹配提示，不作为受支持版本。运行预构建网页不需要Node。
 
 ```powershell
 cd web

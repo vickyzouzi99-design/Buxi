@@ -91,4 +91,20 @@ jeremytarling/python-tarot: random-index/remove method and fair orientation choi
 infomofo/ts-tarot-cards: card/suit/spread type organization.
 Both implementations in this package are independently authored.
 
+2026-11-11 pinned-source correction: python-tarot's README permits code reuse;
+interpretations (CC BY-NC-SA) and images (upstream-specific permission) have
+separate terms. ts-tarot-cards' pinned README declares ISC even without a
+standalone LICENSE file. No code, interpretations or images were added from them.
+Exact reviewed URLs/hashes: docs/source-audit.json and docs/knowledge-review.md.
+
+## Buxi Tarot Knowledge v0.1
+
+The existing Buxi_Tarot_Knowledge_v01 directory is now used at runtime.
+Its Gutenberg #43548 snapshot retains the complete ebook notice and terms.
+The source site marks the historical work public domain in the USA; this does
+not automatically license all territories, modern editions, translations or art.
+AI-assisted Chinese adaptations are separately labelled project drafts, not
+Waite quotations. The Tarotoo MIT notice does not cover this entire package.
+Pollack and Greer book bodies are not included. No third-party art was added.
+
 sqlite-vec is installed through PyPI; no compiled library is bundled in the ZIP.

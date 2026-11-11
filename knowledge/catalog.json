@@ -1,0 +1,8 @@
+{
+  "version": "catalog-2026-11-11.1",
+  "tarot": {"status":"internal_beta_editorial_draft","path":"Buxi_Tarot_Knowledge_v01","knowledge_version":"0.1.0-2026-11-10","human_review":"pending"},
+  "astrology": {"status":"research_only","path":"knowledge/astrology/README.md","system_selection":"pending"},
+  "yijing": {"status":"research_only","path":"knowledge/yijing/README.md","casting_and_interpretation":"pending"},
+  "guanyin": {"status":"research_only","path":"knowledge/guanyin/README.md","edition_selection":"pending"},
+  "original_sticks": {"status":"available_project_original","path":"server/app/rules.py","traditional_guanyin":false}
+}

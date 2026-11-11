@@ -64,7 +64,7 @@ class ApiTests(unittest.TestCase):
   self.assertEqual(r['system'],'sticks');self.assertEqual(r['cards'][0]['kind'],'卜犀原创签')
  def test_knowledge_and_limit(self):
   rows=self.client.get('/api/knowledge',params={'q':'愚者'}).json()
-  self.assertTrue(rows);self.assertEqual(rows[0]['card']['name'],'愚者')
+  self.assertTrue(rows);self.assertEqual(rows[0]['reference']['card_id'],'major-0')
   self.assertEqual(self.client.get('/api/knowledge',params={'q':'x'*201}).status_code,422)
  def test_login_cookie_and_rate_limit(self):
   r=self.client.post('/api/login',json={'code':self.codes[0]});self.assertIn('HttpOnly',r.headers['set-cookie']);self.assertIn('SameSite=strict',r.headers['set-cookie'])
@@ -73,4 +73,4 @@ class ApiTests(unittest.TestCase):
  def test_temp_expiry(self):
   r=self.draw().json();r['created_at']='2000-01-01T00:00:00+00:00'
   with app.state.store.connect() as db: db.execute('UPDATE results SET content=? WHERE id=?',(json.dumps(r),r['id']))
-  self.assertEqual(self.client.get('/api/results/'+r['id']).status_code,404)
+  self.assertEqual(self.client.get('/api/results/'+r['id']).status_code,410)

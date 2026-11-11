@@ -1,5 +1,7 @@
 # 本轮变更决策
 
+> 历史0.2记录。2026-11-11核查更正：python-tarot固定README允许代码复用，牌义与图片另有限制；ts-tarot-cards固定README声明ISC。“未发现根目录LICENSE”不能推导为README无许可声明。当前以 knowledge-review.md 和 feiyue-delivery.md 为准。
+
 python-tarot 的 webapp/cards.py 随机索引取牌后移除；正逆位使用 random.choice([True,False])，仍是各50%。三牌调用同一牌堆三次。本包独立实现抽取方法并使用系统随机源，未复制其源码、图片或牌义。仓库根目录未发现 LICENSE，不能把整个项目默认视为可任意复制的依赖。
 
 ts-tarot-cards 将 Arcana、Suit、牌号、牌与牌阵分开。本包参考组织方式自行定义类型，未复制源码或安装整个库。检查的根目录同样未发现 LICENSE。

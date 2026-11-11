@@ -1,0 +1,18 @@
+/* v0.3: calm cream paper, readable ink, original 866×1817 card ratio. */
+:root{color:#433a47;background:#fbf7ef;--green:#78546d;--muted:#6d5e70;--line:#ddcfba;--paper:#fffcf7}
+body{background:#fbf7ef}aside{background:linear-gradient(180deg,#f8eee8,#eee7f2)}
+.hero{background:linear-gradient(115deg,#f9e9e9,#e9e2f1)}.primary{background:#78546d;color:#fff}.primary:hover:not(:disabled){background:#65455c}
+.hero p,.hero-note,.side-caption,.tool p,.daily p,.friend-peek p,.fine,.eyebrow,.login-card p,.login-card small{color:#6d5e70}
+.prose{color:#433a47}.draw-form,.interpretation,.chat,.login-card{background:#fffcf7}.text-button{color:#78546d}
+.hero-deck,.decor-card,.decor-card.rear{aspect-ratio:866/1817;height:auto;background-size:contain;background-repeat:no-repeat;background-color:#f5e8ef}
+.card-slot{width:170px;max-width:32%;min-width:0;text-align:center}.card-slot>.position{font-size:13px;margin:0 0 12px;color:#433a47}
+.card-slot .tarot-card{width:100%;height:auto;min-height:0;aspect-ratio:866/1817;background-size:contain;background-repeat:no-repeat;padding:18px 10px}
+.tarot-card:not(.revealed)>.emblem{visibility:hidden}.tarot-card.revealed{animation:reveal .25s ease}.tarot-card.revealed>.emblem{width:75%;margin:16px 0}
+.tarot-card strong{color:#433a47}.tarot-card small{color:#6d5e70}.tarot-card.revealed>span{color:#433a47}
+.sources{color:#57495b;text-align:left}.sources article{padding:15px 0;border-bottom:1px solid var(--line)}.sources a{text-decoration:underline}.sources .prose{font-size:12px}.thread{display:block;margin:8px 0}
+.chat{padding:24px}.chat .messages{max-height:65dvh;overflow:auto;overscroll-behavior:contain;padding:4px}
+.chat form{position:sticky;bottom:0;background:#fffcf7;padding:14px 0 max(14px,env(safe-area-inset-bottom));z-index:2}.chat form textarea{max-height:180px;resize:vertical}
+.message{line-height:1.9;color:#433a47}.message p{font-size:14px}.actions{flex-wrap:wrap}.share-reading .primary{margin:0 10px 10px 0}
+.login-shell{background:linear-gradient(135deg,#fbf7ef,#f3e6ed)}
+@media(max-width:700px){.cards{gap:10px}.card-slot{width:32%;max-width:32%}.count-1 .card-slot{width:165px;max-width:65%}.count-1 .tarot-card{width:100%;min-height:0}.card-slot .tarot-card{padding:10px 5px}.tarot-card strong{font-size:17px}.tarot-card.revealed>.emblem{margin:10px 0}.tarot-card small{margin-top:8px;font-size:9px}.tarot-card>span:not(.position){font-size:8px;letter-spacing:0}.card-slot>.position{font-size:12px}.chat{padding:14px}.chat .messages{max-height:55dvh}.chat form{gap:8px;bottom:64px}.chat form button{padding:14px 12px;font-size:12px}.chat form textarea{font-size:16px;min-height:88px}.hero-deck{height:auto}.login-card{padding:30px 24px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

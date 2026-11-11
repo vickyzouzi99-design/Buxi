@@ -1,10 +1,8 @@
-SPREADS = {'single':['此刻的提醒'], 'three':['当下','值得留意','可以尝试'], 'reflection':['现状','阻碍','建议']}
-READING_RULES = """依据本次牌的正逆位含义和牌位解释，优先回答用户的问题。逆位可以是受阻、过度或内化，不能一律当坏事。不把象征写成事实，不用牌断言他人心理。资料原文为英文，请自然地用中文解释。用户记忆来自用户分享，提及时说清来源，不冒充牌面揭示的秘密。默认2–4句，用户明确要求详细再展开；仅回应点名的牌，一次最多一个行动建议。纯文本，不用标题编号或加粗，不机械重复免责声明。"""
-FRIENDS = {
- 'feiyue':{'name':'绯月','icon':'☾','style':'温暖俏皮，善于倾听，用短句回应','greeting':'今天想翻一张牌，还是先说说心事？'},
- 'xingche':{'name':'星澈','icon':'✧','style':'细致温柔，善于把复杂的感受整理清楚','greeting':'给今天留一点空白吧。有什么小事想聊聊？'},
- 'zhiwei':{'name':'知微','icon':'☷','style':'沉稳直接，有一点生活里的幽默','greeting':'先坐一会儿。不急着找答案，慢慢说。'}
-}
+"""Compatibility exports and original Buxi reflection sticks."""
+from .spreads import SPREADS, SPREAD_VERSION, SPREAD_DEFINITIONS
+from .personas import FRIENDS
+from .policies import READING_RULES
+
 # Original Buxi prompts, not traditional temple texts.
 STICKS = [
  ('缓缓花开','先照顾眼前的小事，给变化留一点时间。'),('借一盏灯','遇到卡住的地方，可以向信任的人问一个具体问题。'),
