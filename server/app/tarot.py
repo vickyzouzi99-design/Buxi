@@ -51,5 +51,12 @@ def draw(spread,rng=None,allow_reversed=True):
         hand.append(dict(card,position=position,reversed=rev,prompt=card['meanings']['reversed' if rev else 'upright']))
     return hand
 
+def shuffled_deck(allow_reversed=True,rng=None):
+    """Freeze a complete hidden deck before the user picks positions."""
+    rng=rng or secrets.SystemRandom()
+    cards=deck()
+    rng.shuffle(cards)
+    return [dict(c,reversed=rng.choice([True,False]) if allow_reversed else False) for c in cards]
+
 def reflection(cards):
     return '\n\n'.join(f"{c['position']} · {c['name']}（{'逆位' if c['reversed'] else '正位'}）\n资料原文：{c['prompt']}" for c in cards)

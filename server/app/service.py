@@ -23,8 +23,8 @@ class Store:
         if self.path.exists():
             with closing(sqlite3.connect(self.path)) as old:
                 version=old.execute('PRAGMA user_version').fetchone()[0]
-                if version < 3:
-                    backup=self.path.with_name(self.path.name+'.pre-v3-'+uuid.uuid4().hex[:8]+'.bak')
+                if version < 4:
+                    backup=self.path.with_name(self.path.name+'.pre-v4-'+uuid.uuid4().hex[:8]+'.bak')
                     with closing(sqlite3.connect(backup)) as dest: old.backup(dest)
         with self.connect() as db:
             db.executescript("""
@@ -38,6 +38,7 @@ class Store:
             CREATE TABLE IF NOT EXISTS tombstones(owner TEXT NOT NULL, request_key TEXT NOT NULL, result_id TEXT NOT NULL, reason TEXT NOT NULL, PRIMARY KEY(owner,request_key));
             CREATE TABLE IF NOT EXISTS conversations(id TEXT PRIMARY KEY, owner TEXT NOT NULL, friend TEXT NOT NULL, reading_id TEXT, reading_key TEXT NOT NULL, state TEXT NOT NULL DEFAULT 'active', context_after REAL NOT NULL DEFAULT 0, created REAL NOT NULL, UNIQUE(owner,friend,reading_key));
             CREATE TABLE IF NOT EXISTS operations(owner TEXT NOT NULL, scope TEXT NOT NULL, request_key TEXT NOT NULL, payload TEXT NOT NULL, state TEXT NOT NULL, token TEXT NOT NULL, started REAL NOT NULL, response TEXT, PRIMARY KEY(owner,scope,request_key));
+            CREATE TABLE IF NOT EXISTS hidden_decks(result_id TEXT PRIMARY KEY, content TEXT NOT NULL);
             """)
     @contextmanager
     def connect(self):
@@ -49,11 +50,14 @@ class Store:
                 yield db
         finally:
             db.close()
-    def create(self, question, spread, request_key, owner="local", allow_reversed=True, system="tarot", save=True):
+    def create(self, question, spread, request_key, owner="local", allow_reversed=True, system="tarot", save=True, select_cards=False):
         question=question.strip()
         if len(question)>1000 or not 8 <= len(request_key) <= 100:
             raise ValueError("问题过长或请求标识无效")
         payload=json.dumps({"question":question,"spread":spread,"allow_reversed":allow_reversed,"system":system},ensure_ascii=False,sort_keys=True)
+        if select_cards:
+            if system!='tarot': raise ValueError('只有塔罗支持选牌')
+            payload=json.dumps(dict(json.loads(payload),select_cards=True),ensure_ascii=False,sort_keys=True)
         with self.connect() as db:
             db.execute("BEGIN IMMEDIATE")
             if db.execute('SELECT 1 FROM tombstones WHERE owner=? AND request_key=?',(owner,request_key)).fetchone():
@@ -64,7 +68,10 @@ class Store:
                 if old["payload"] != payload:
                     raise Conflict("同一请求标识不能用于不同的问题")
                 return json.loads(old["content"])
-            if system=='tarot': cards=draw(spread,allow_reversed=allow_reversed)
+            if system=='tarot':
+                from .spreads import SPREADS
+                if spread not in SPREADS: raise ValueError('不支持的牌阵')
+                cards=[] if select_cards else draw(spread,allow_reversed=allow_reversed)
             elif system=='sticks':
                 from .rules import STICKS
                 import secrets
@@ -76,21 +83,31 @@ class Store:
                     "algorithm_version":"draw-remove-v2","allow_reversed":allow_reversed,"interpretation":reflection(cards) if system=="tarot" else cards[0]["prompt"],
                     "interpretation_source":"local_reflection","model":None}
             result.update(revealed=[], generation_status='idle')
-            if system=='tarot':
-                from . import knowledge
-                from .rules import SPREAD_VERSION, SPREAD_DEFINITIONS
-                refs=knowledge.snapshot(cards)
-                for c,p,r in zip(cards,SPREAD_DEFINITIONS[spread],refs):
-                    c['position_id']=p['id'];c['position_definition']=p['meaning'];c['prompt']=r['text']
-                    # Preserve Tarotoo in its own source branch, not in the default prompt.
-                    c.pop('meanings',None);c.pop('contexts',None);c.pop('keywords',None);c.pop('source',None)
-                result.update(knowledge_version=knowledge.VERSION, knowledge_snapshot=refs,
-                              spread_version=SPREAD_VERSION, interpretation_policy=knowledge.POLICY_VERSION,
-                              persona_version=knowledge.PERSONA_VERSION,prompt_version=knowledge.PROMPT_VERSION,
-                              interpretation='这组牌可以作为观察当下的几个角度。以下是项目编辑初稿，结合你的具体处境仍需进一步讨论。\n\n'+'\n\n'.join(f"{c['position']} · {c['name']}（{'逆位' if c['reversed'] else '正位'}）\n{r['text']}" for c,r in zip(cards,refs)),interpretation_source='editorial_draft', citations=knowledge.label(refs))
+            if select_cards:
+                from .tarot import shuffled_deck
+                result.update(selection={'status':'picking','total':78,'picked':[],'positions':SPREADS[spread]},
+                              algorithm_version='shuffle-pick-v1',interpretation='',interpretation_source='pending_selection')
+                hidden=shuffled_deck(allow_reversed)
+                db.execute('INSERT INTO hidden_decks VALUES (?,?)',(result['id'],json.dumps(hidden,ensure_ascii=False)))
+            elif system=='tarot':
+                self.decorate_tarot(result)
             db.execute("INSERT INTO results VALUES (?,?,?,?,?,?)",
                        (result["id"],owner,request_key,payload,json.dumps(result,ensure_ascii=False),result["created_at"]))
             return result
+    def decorate_tarot(self, result):
+        cards=result["cards"];spread=result["spread"]
+        from . import knowledge
+        from .rules import SPREAD_VERSION, SPREAD_DEFINITIONS
+        refs=knowledge.snapshot(cards)
+        for c,p,r in zip(cards,SPREAD_DEFINITIONS[spread],refs):
+            c['position_id']=p['id'];c['position_definition']=p['meaning'];c['prompt']=r['text']
+            # Preserve Tarotoo in its own source branch, not in the default prompt.
+            c.pop('meanings',None);c.pop('contexts',None);c.pop('keywords',None);c.pop('source',None)
+        result.update(knowledge_version=knowledge.VERSION, knowledge_snapshot=refs,
+                      spread_version=SPREAD_VERSION, interpretation_policy=knowledge.POLICY_VERSION,
+                      persona_version=knowledge.PERSONA_VERSION,prompt_version=knowledge.PROMPT_VERSION,
+                      interpretation='这组牌可以作为观察当下的几个角度。以下是项目编辑初稿，结合你的具体处境仍需进一步讨论。\n\n'+'\n\n'.join(f"{c['position']} · {c['name']}（{'逆位' if c['reversed'] else '正位'}）\n{r['text']}" for c,r in zip(cards,refs)),interpretation_source='editorial_draft', citations=knowledge.label(refs))
+
     def get(self, result_id, owner="local"):
         with self.connect() as db:
             row=db.execute("SELECT content FROM results WHERE id=? AND owner_id=?",(result_id,owner)).fetchone()
@@ -133,10 +150,35 @@ class Store:
             ids=[r[0] for r in db.execute('SELECT id FROM conversations WHERE owner=? AND reading_id=?',(owner,result_id))]
             for cid in ids:
                 db.execute('DELETE FROM dialogs WHERE owner=? AND conversation_id=?',(owner,cid))
-                db.execute("UPDATE operations SET state='gone',response=NULL WHERE owner=? AND scope=?",(owner,'chat:'+cid))
+                db.execute("UPDATE operations SET state='gone',response=NULL,payload='{}' WHERE owner=? AND scope=?",(owner,'chat:'+cid))
             db.execute("UPDATE conversations SET state=? WHERE owner=? AND reading_id=?",(reason,owner,result_id))
-            db.execute("UPDATE operations SET state='gone',response=NULL WHERE owner=? AND scope=?",(owner,'interpret:'+result_id))
+            db.execute("UPDATE operations SET state='gone',response=NULL,payload='{}' WHERE owner=? AND scope=?",(owner,'interpret:'+result_id))
             db.execute("DELETE FROM results WHERE id=? AND owner_id=?",(result_id,owner))
+            db.execute('DELETE FROM hidden_decks WHERE result_id=?',(result_id,))
+
+    def pick(self, rid, slot, order, owner):
+        self.get(rid,owner)
+        with self.connect() as db:
+            db.execute('BEGIN IMMEDIATE')
+            row=db.execute('SELECT content FROM results WHERE id=? AND owner_id=?',(rid,owner)).fetchone()
+            if not row: raise Gone()
+            r=json.loads(row[0]);selection=r.get('selection')
+            if not selection: raise Conflict('这次体验不需要选牌')
+            picked=selection['picked']
+            if order<len(picked):
+                if picked[order]==slot: return r
+                raise Conflict('这个牌位已经选好，请刷新查看')
+            if order!=len(picked) or selection['status']!='picking': raise Conflict('选牌进度已更新，请刷新查看')
+            if not 0<=slot<selection['total'] or slot in picked: raise ValueError('请选择尚未选过的牌')
+            picked.append(slot)
+            if len(picked)==len(selection['positions']):
+                hidden=json.loads(db.execute('SELECT content FROM hidden_decks WHERE result_id=?',(rid,)).fetchone()[0])
+                r['cards']=[dict(hidden[i],position=position) for i,position in zip(picked,selection['positions'])]
+                self.decorate_tarot(r)
+                selection['status']='complete'
+                db.execute('DELETE FROM hidden_decks WHERE result_id=?',(rid,))
+            db.execute('UPDATE results SET content=? WHERE id=?',(json.dumps(r,ensure_ascii=False),rid))
+            return r
 
     def reveal(self, rid, ids, owner):
         with self.connect() as db:

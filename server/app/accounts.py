@@ -28,7 +28,9 @@ class Accounts:
                 db.execute("INSERT OR IGNORE INTO conversations VALUES (?,?,?,?,?,'active',?,?)",(cid,owner,friend,None,'daily',time.time(),time.time()))
                 cid=db.execute("SELECT id FROM conversations WHERE owner=? AND friend=? AND reading_key='daily'",(owner,friend)).fetchone()[0]
                 db.execute('UPDATE dialogs SET conversation_id=? WHERE owner=? AND friend=? AND conversation_id IS NULL',(cid,owner,friend))
-            db.execute('PRAGMA user_version=3')
+            db.execute('PRAGMA user_version=4')
+            # Purge retained request text from tombstones made by earlier v3 builds.
+            db.execute("UPDATE operations SET payload='{}',response=NULL WHERE state='gone'")
     def issue(self,count=1):
         codes=[]
         with self.store.connect() as db:
@@ -129,7 +131,7 @@ class Accounts:
     def clear_conversations(self,owner,friend):
         with self.store.connect() as db:
             db.execute('BEGIN IMMEDIATE')
-            db.execute("UPDATE operations SET state='gone',response=NULL WHERE owner=? AND scope IN (SELECT 'chat:'||id FROM conversations WHERE owner=? AND friend=?)",(owner,owner,friend))
+            db.execute("UPDATE operations SET state='gone',response=NULL,payload='{}' WHERE owner=? AND scope IN (SELECT 'chat:'||id FROM conversations WHERE owner=? AND friend=?)",(owner,owner,friend))
             db.execute('DELETE FROM dialogs WHERE owner=? AND friend=?',(owner,friend))
             # Keep ID so a concurrent stale response cannot recreate deleted messages.
             db.execute('UPDATE conversations SET context_after=? WHERE owner=? AND friend=?',(time.time(),owner,friend))

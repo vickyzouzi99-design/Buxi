@@ -4,6 +4,7 @@ Run manually: .venv\Scripts\python.exe scripts\live_eval.py
 At most 10 model calls. Report is evidence, never auto-labelled expert-approved.
 """
 import argparse,json, os, sys, tempfile, time
+from datetime import datetime, timezone
 from pathlib import Path
 from unittest.mock import patch
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
@@ -27,7 +28,7 @@ CASES=[
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--only',nargs='*');parser.add_argument('--output',default='live-model.json');args=parser.parse_args()
  if not model.configured(): raise SystemExit('Model not configured; no evaluation run.')
- report={'date':'2026-11-11','kind':'live_model_synthetic_inputs','human_review':'not_done','knowledge_version':knowledge.VERSION,**model.generation_metadata(),'cases':[]}
+ report={'date':datetime.now(timezone.utc).date().isoformat(),'kind':'live_model_synthetic_inputs','human_review':'not_done','knowledge_version':knowledge.VERSION,**model.generation_metadata(),'cases':[]}
  out=ROOT/'docs/evaluations'/Path(args.output).name;out.parent.mkdir(parents=True,exist_ok=True)
  def record(name,question,response,started):
   data=response.json();report['cases'].append({'id':name,'question':question,'http_status':response.status_code,'elapsed_seconds':round(time.monotonic()-started,2),'response':data})

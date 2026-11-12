@@ -73,10 +73,11 @@ class DrawInput(BaseModel):
     request_key:str=Field(min_length=8,max_length=100)
     allow_reversed:bool=True
     save:bool=False
+    select_cards:bool=False
 @app.post('/api/results/{system}')
 def draw(system:str,data:DrawInput,who=Depends(owner)):
     cleanup(who)
-    return app.state.store.create(data.question,data.spread,data.request_key,who,data.allow_reversed,system,data.save)
+    return app.state.store.create(data.question,data.spread,data.request_key,who,data.allow_reversed,system,data.save,data.select_cards)
 # Unconfirmed draws expire after 24h; they are available only to their owner in the interim.
 def cleanup(who):
     from datetime import datetime,timezone
@@ -109,6 +110,18 @@ class RetryInput(BaseModel):
 class RevealInput(BaseModel):
     revealed:list[str]=Field(max_length=78)
 
+class PickInput(BaseModel):
+    slot:int=Field(ge=0,lt=78,strict=True)
+    order:int=Field(ge=0,lt=3,strict=True)
+
+@app.post('/api/results/{rid}/picks')
+def pick(rid:str,data:PickInput,who=Depends(owner)):
+    result(rid,who)
+    return app.state.store.pick(rid,data.slot,data.order,who)
+
+def require_selected(r):
+    if r.get('selection',{}).get('status')=='picking': raise Conflict('先选好这次的牌，再继续吧')
+
 @app.put('/api/results/{rid}/reveal')
 def reveal(rid:str,data:RevealInput,who=Depends(owner)):
     result(rid,who);return app.state.store.reveal(rid,data.revealed,who)
@@ -116,6 +129,7 @@ def reveal(rid:str,data:RevealInput,who=Depends(owner)):
 @app.post('/api/results/{rid}/interpretations')
 def interpret(rid:str,data:RetryInput=RetryInput(),who=Depends(owner)):
     r=result(rid,who);store=app.state.store;scope='interpret:'+rid
+    require_selected(r)
     token,cached=store.claim(who,scope,data.request_key,{'rid':rid})
     if cached is not None: return get(rid,who)
     try:
@@ -142,7 +156,7 @@ class ConversationInput(BaseModel):
 
 @app.post('/api/friends/{friend}/conversations')
 def open_conversation(friend:str,data:ConversationInput,who=Depends(owner)):
-    if data.reading_id: result(data.reading_id,who)
+    if data.reading_id: require_selected(result(data.reading_id,who))
     c=app.state.accounts.open_conversation(who,friend,data.reading_id)
     return conversation(friend,c['id'],who)
 
@@ -159,6 +173,7 @@ def conversation(friend:str,cid:str,who=Depends(owner)):
 @app.get('/api/friends/{friend}/messages')
 def history(friend:str,who=Depends(owner)):
     if friend not in FRIENDS: raise ValueError('未知朋友')
+    cleanup(who)
     return app.state.accounts.history(who,friend)
 @app.delete('/api/friends/{friend}/messages')
 def clear_chat(friend:str,who=Depends(owner)):
@@ -171,6 +186,7 @@ def chat(friend:str,data:ChatInput,who=Depends(owner)):
     c=accounts.conversation(who,friend,data.conversation_id) if data.conversation_id else accounts.open_conversation(who,friend,data.reading_id)
     if data.reading_id and c['reading_id']!=data.reading_id: raise Conflict('不能将另一牌阵加入当前会话，请明确打开新的会话')
     r=result(c['reading_id'],who) if c['reading_id'] else None
+    if r: require_selected(r)
     scope='chat:'+c['id'];token,cached=store.claim(who,scope,data.request_key,{'message':data.message,'reading_id':c['reading_id']})
     if cached is not None: return cached
     try:

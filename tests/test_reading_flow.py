@@ -71,6 +71,13 @@ class ReadingFlowTests(unittest.TestCase):
   refs=knowledge.references(r,'圣杯八逆位')
   self.assertEqual(len(refs),1);self.assertEqual(refs[0]['source_id'],'tarotoo')
   self.assertEqual(refs[0]['knowledge_version'],c['source']['revision'])
+ def test_original_stick_text_reaches_model_and_citation(self):
+  r=self.client.post('/api/results/sticks',json={'request_key':'original-stick-test'}).json()
+  with patch.object(model,'complete',return_value='这是卜犀原创反思签，可以作为一个提醒。[K1]') as call:
+   response=self.client.post(f"/api/results/{r['id']}/interpretations")
+   self.assertEqual(response.status_code,200)
+   self.assertIn(r['cards'][0]['prompt'],call.call_args.args[0][0]['content'])
+   self.assertEqual(response.json()['citations'][0]['source_id'],'buxi_original_sticks')
  def test_chat_idempotent_lost_response_and_conflict(self):
   r=self.draw().json();c=self.convo(r['id'])
   with patch.object(model,'complete',return_value='我听着呢。') as call:
@@ -104,7 +111,28 @@ class ReadingFlowTests(unittest.TestCase):
   with app.state.store.connect() as db:
    self.assertEqual(db.execute('SELECT count(*) FROM dialogs').fetchone()[0],0)
    self.assertEqual(db.execute("SELECT count(*) FROM operations WHERE response IS NOT NULL").fetchone()[0],0)
+   self.assertEqual(db.execute("SELECT count(*) FROM operations WHERE payload!='{}'").fetchone()[0],0)
   self.assertEqual(len(self.client.get('/api/memories').json()),1)
+ def test_clear_chat_purges_request_text_and_preserves_tombstone(self):
+  c=self.convo()
+  with patch.object(model,'complete',return_value='已经听见。'):
+   self.assertEqual(self.send(c,'待删除的私人内容').status_code,200)
+  self.client.delete('/api/friends/feiyue/messages')
+  with app.state.store.connect() as db:
+   row=db.execute('SELECT state,payload,response FROM operations').fetchone()
+   self.assertEqual(tuple(row),('gone','{}',None))
+  self.assertEqual(self.send(c,'待删除的私人内容').status_code,410)
+  with patch.object(model,'complete',return_value='新的对话。'):
+   self.assertEqual(self.send(c,'重新开始',key='fresh-chat-key').status_code,200)
+ def test_legacy_history_expires_linked_dialogs(self):
+  r=self.draw(save=False).json();c=self.convo(r['id'])
+  with patch.object(model,'complete',return_value='这次的对话。'):
+   self.send(c)
+  with app.state.store.connect() as db:
+   r['created_at']='2000-01-01T00:00:00+00:00'
+   db.execute('UPDATE results SET content=? WHERE id=?',(json.dumps(r),r['id']))
+  self.assertEqual(self.client.get('/api/friends/feiyue/messages').json(),[])
+  self.assertEqual(self.send(c).status_code,410)
  def test_account_role_and_conversation_isolation(self):
   a=self.convo(self.draw().json()['id']);daily=self.convo();other=self.convo(friend='xingche')
   with patch.object(model,'complete',return_value='接住你的心情。') as call:

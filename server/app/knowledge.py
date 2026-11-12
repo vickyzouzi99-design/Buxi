@@ -80,6 +80,14 @@ def search(query, version=VERSION):
 
 def references(result=None, query=''):
     items=deepcopy((result or {}).get('knowledge_snapshot',[]))
+    if result and result.get('system')=='sticks':
+        # Keep the original in-product text available to interpretation and follow-ups.
+        # This is a saved original prompt, not a traditional temple signbook.
+        for c in result['cards']:
+            items.append({'entry_id':f"original-stick:{result['id']}:{c['id']}",'card_id':c['id'],
+                          'title':c['name'],'text':c['prompt'],'source_id':'buxi_original_sticks',
+                          'knowledge_version':'embedded-original-stick','content_kind':'project_original',
+                          'review_status':'project_defined','evidence':[]})
     # Old records retain their embedded Tarotoo meanings; never apply the new default to them.
     if result and result.get('system')=='tarot' and not items:
         for c in result['cards']:

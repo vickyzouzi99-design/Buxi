@@ -1,6 +1,6 @@
 # 历史规划（保留供参考）
 
-当前实现与限制以 README.md、changes-v02.md、validation.md 为准。下方是旧版规划，不代表当前完成状态。
+当前实现与限制以 README.md、[feiyue-delivery.md](feiyue-delivery.md)、[validation-v03.md](validation-v03.md) 为准。下方是旧版规划，不代表当前完成状态。
 
 # 卜犀 Buxi：AI 占卜工具与朋友陪伴应用完整方案
 
